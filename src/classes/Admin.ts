@@ -1,0 +1,6 @@
+class Diretoria {
+    cadastrar(): void {
+
+    }
+
+}
