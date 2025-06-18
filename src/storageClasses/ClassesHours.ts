@@ -28,6 +28,19 @@ class storageValues{
         for ( let i:number = 0; i < this.hashMap[nameroom].length; i++) {
             console.log(`Horario ${i}: ${this.hashMap[nameroom][i]}`)
         }
-        console.log("======================")
+        console.log("========================")
+    }
+
+    deleteStoragedTime(room:string, hour:number){
+        if (!this.hashMap[room]){
+            console.log("Sala Inexistente no sistema!")
+            return;
+        }
+        const index = this.hashMap[room].indexOf(hour);
+        if (index> -1){
+            this.hashMap[room].splice(index, 1);
+            console.log(`Horario ${hour} deletado da sala ${room}`)
+            return;
+        }
     }
 }
