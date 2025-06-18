@@ -1,4 +1,4 @@
-class Sala {
+class Sala extends storageValues{
     private nome: string = "";
     private capacity: number = 0;
     horarios: number[] = [];
