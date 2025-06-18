@@ -1,7 +1,6 @@
-class Sala extends storageValues{
+class Sala{
     private nome: string = "";
     private capacity: number = 0;
-    horarios: number[] = [];
 
     getName(): string {
         const result: string = this.nome;

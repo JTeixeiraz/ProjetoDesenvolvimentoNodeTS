@@ -1,4 +1,4 @@
-class storageValues{
+class StorageValues{
     private hashMap: {[Key:string]:number[]} = {};
     storaged:boolean = false;
     storage(hour:number, room:string){
