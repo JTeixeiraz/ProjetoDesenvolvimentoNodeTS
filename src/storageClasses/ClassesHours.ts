@@ -12,6 +12,7 @@ class storageValues{
                     }else{
                         this.hashMap[room].push(hour)
                         console.log(`Horario: ${hour} adicionado para a sala ${room}`)
+                        console.log("========================")
                         this.hashMap[room].sort();
                         this.storaged = true;
                         return
@@ -22,7 +23,11 @@ class storageValues{
     }
 
     getStoraged():void{
-
+        const nameroom: string = rl.question("Informe o nome da sala que deseja conferir a lista de agendamento: ")
+        console.log("")
+        for ( let i:number = 0; i < this.hashMap[nameroom].length; i++) {
+            console.log(`Horario ${i}: ${this.hashMap[nameroom][i]}`)
+        }
+        console.log("======================")
     }
-
 }
